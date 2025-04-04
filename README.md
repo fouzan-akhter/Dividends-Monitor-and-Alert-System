@@ -1,8 +1,4 @@
-# Dividend Monitoring & Alert System
-
-<div align="center" style="margin: 20px 0;">
-  <div class="wave" style="font-size: 3rem; display: inline-block; animation: wave 2s infinite;"></div>
-</div>
+# <div style="display: flex; align-items: center; justify-content: center;"><img align="left" alt="Python Logo" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /><span style="margin-left: 5px;">Dividend Monitoring & Alert System</span></div>
 
 **An intelligent, automated system for real-time dividend monitoring — built for portfolio managers, analysts, and finance professionals.**
 
