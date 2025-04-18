@@ -1,3 +1,7 @@
 AAPL
 IBM
 XOM
+OKE
+BANR
+F
+MS
