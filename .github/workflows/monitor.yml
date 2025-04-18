@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+        with:
+          fetch-depth: 0  # Required to push changes later
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -26,9 +28,10 @@ jobs:
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
       
       - name: Persist dividend data
+        if: always()
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add dividend_data.json
           git commit -m "Update dividend data" || echo "No changes to commit"
-          git push
+          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
